@@ -72,15 +72,7 @@
         </div>
     </p>
 
-    <style>
-        #btngroup {
-            width: 40%;
-            position: fixed;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    </style>
-
+    <div class="row" id="showtype" style="margin-top: 40px;margin-left: 40px;margin-right: 40px;"></div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -93,7 +85,7 @@
         $('select').on('change', function () {
           var e = document.getElementById('type').value;
           console.log(e);
-          var test = http://localhost:8080/appstore;
+          var test = `http://localhost:8080/appstore/`;
     
           $.get(test, function (data) {
             $("#showtype").empty();
