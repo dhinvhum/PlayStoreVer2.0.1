@@ -115,10 +115,12 @@
     $('select').on('change', function () {
       var e = document.getElementById('category').value;
       console.log(e);
-      var test = `http://localhost:8080/appstore/category/${e}`;
+      var test = `http://localhost:8080/appstore/`;
 
       $.get(test, function (data) {
-        for (var x = 0; x < 6; x++) {
+        $("#showcat").empty();
+        for (var x = 0; x < 12; x++) {
+          if (data[x].genres = e) {
           var row = ` 
 
             <div class="col-lg-4 col-md-6 mb-4">
@@ -139,16 +141,10 @@
           $("#showcat").append(row);
 
         }
-
+        }
       });
     })
-    
-    
-    $(function () {
 
-      
-
-    });
   </script>
 
 </body>
