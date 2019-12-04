@@ -7,7 +7,7 @@ $(function () {
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="https://www.elsetge.cat/myimg/f/11-115406_wide-hd-gray.jpg" alt=""></a>
+                    <a href="#"><img class="card-img-top" src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?cs=srgb&dl=person-wearing-red-hoodie-1097456.jpg&fm=jpg" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">${data[x].app}</a>
